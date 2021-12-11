@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* util */
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* style */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+header {
+  background-color: #f6f5ef;
+  position: fixed;
+  width: 100%;
+}
+
+header .cont-header {
+  margin: 0 auto;
+  width: 54.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.cont-header .bar-nav,
+.cont-header .info {
+  font-size: 0.65rem;
+}
+
+.cont-header .logo {
+  padding: 1.1rem 0;
+}
+
+.cont-header .bar-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #333;
+  padding-top: 3.4rem;
+}
+.cont-header .bar-nav li a {
+  padding: 0.5rem 1.25rem;
+}
+
+.cont-header .info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #555;
+}
+.cont-header .info li {
+  position: relative;
+  padding-top: 0.75rem;
+}
+.cont-header .info li a {
+  padding: 0.75rem;
+}
+.cont-header .info li ~ li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  width: 1px;
+  height: 0.65rem;
+  background-color: gray;
+  opacity: 0.2;
+}
