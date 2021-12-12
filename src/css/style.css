@@ -10,6 +10,24 @@
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
+.skip-navigation {
+  position: relative;
+  z-index: 9999;
+}
+.skip-navigation a {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  line-height: 30px;
+  border: 1px solid #dedede;
+  background-color: #333;
+}
+.skip-navigation a:focus,
+.skip-navigation a:active {
+  top: 0;
+}
+
 /* style */
 
 html {
@@ -33,7 +51,7 @@ header .cont-header {
   display: flex;
   justify-content: space-between;
 }
-.cont-header .bar-nav,
+.cont-header .nav-main,
 .cont-header .info {
   font-size: 0.65rem;
 }
@@ -42,15 +60,20 @@ header .cont-header {
   padding: 1.1rem 0;
 }
 
-.cont-header .bar-nav {
+.cont-header .nav-main {
   display: flex;
   width: 100%;
   align-items: center;
   color: #333;
   padding-top: 3.4rem;
 }
-.cont-header .bar-nav li a {
+.cont-header .nav-main li a {
   padding: 0.5rem 1.25rem;
+}
+
+/* 소제목  */
+.nav-sub {
+  display: none;
 }
 
 .cont-header .info {
@@ -76,4 +99,31 @@ header .cont-header {
   height: 0.65rem;
   background-color: gray;
   opacity: 0.2;
+}
+
+/* contents */
+main {
+  padding-top: 6rem;
+  width: 100%;
+}
+
+main .cont-main {
+  margin: 0 auto;
+  width: 54.5rem;
+}
+
+.cont-main .title-main {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.cont-main .site-map {
+  text-align: right;
+  font-size: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.cont-main .cont-sort {
+  width: 100%;
+  border: 1px solid #ddd;
 }
