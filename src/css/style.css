@@ -2,12 +2,13 @@
 
 /* util */
 .hide {
+  overflow: hidden;
+  display: block;
   position: absolute;
+  border: 0;
   width: 1px;
   height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .skip-navigation {
@@ -51,8 +52,8 @@ header .cont-header {
   display: flex;
   justify-content: space-between;
 }
-.cont-header .nav-main,
-.cont-header .info {
+.cont-header .lists-gnb,
+.cont-header .util {
   font-size: 0.65rem;
 }
 
@@ -60,45 +61,63 @@ header .cont-header {
   padding: 1.1rem 0;
 }
 
-.cont-header .nav-main {
+.cont-header .lists-gnb {
   display: flex;
   width: 100%;
   align-items: center;
   color: #333;
-  padding-top: 3.4rem;
+  padding-top: 2.4rem;
 }
-.cont-header .nav-main li a {
+.cont-header .lists-gnb li a {
+  display: inline-block;
   padding: 0.5rem 1.25rem;
+  line-height: 1.5rem;
+  height: 2.5rem;
 }
-
+.cont-header .lists-gnb li:hover {
+  background-color: #2c2a29;
+}
+.cont-header .lists-gnb li a:hover {
+  color: #669900;
+  text-decoration: underline;
+}
 /* 소제목  */
-.nav-sub {
+.snb {
   display: none;
 }
 
-.cont-header .info {
+.cont-header .util {
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
   color: #555;
 }
-.cont-header .info li {
+
+.cont-header .util li a {
   position: relative;
-  padding-top: 0.75rem;
-}
-.cont-header .info li a {
+  display: inline-block;
   padding: 0.75rem;
 }
-.cont-header .info li ~ li a::after {
+.cont-header .util li ~ li a::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
   width: 1px;
   height: 0.65rem;
   background-color: gray;
   opacity: 0.2;
+}
+.cont-header .util li button {
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url(../../src/img/icon_search.png) no-repeat center #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  margin-top: 0.35rem;
+  cursor: pointer;
 }
 
 /* contents */

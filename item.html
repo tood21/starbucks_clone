@@ -11,8 +11,8 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/src/css/reset.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
     <div class="skip-navigation">
@@ -22,14 +22,14 @@
     <header>
       <div class="cont-header">
         <h1 class="logo">
-          <a href="#none"><img src="/src/img/logo.png" alt="스타벅스" /></a>
+          <a href="#none"><img src="src/img/logo.png" alt="스타벅스" /></a>
         </h1>
-        <nav class="nav-header">
-          <h2 class="hide" id="mainMenu">메인메뉴</h2>
-          <ul class="nav-main">
+        <h2 class="hide" id="mainMenu">메인메뉴</h2>
+        <nav class="gnb">
+          <ul class="lists-gnb">
             <li>
               <a href="#none">COFFEE</a>
-              <div class="nav-sub">
+              <div class="snb">
                 <ul>
                   <li><a href=#none">커피</a></li>
                   <li><a href="#none">스타벅스 원두</a></li>
@@ -72,7 +72,7 @@
             </li>
             <li>
               <a href="#none">MENU</a>
-              <div class="nav-sub">
+              <div class="snb">
                 <ul>
                   <li><a href=#none">음료</a></li>
                   <li><a href=#none">콜드 브루</a></li>
@@ -121,7 +121,7 @@
             </li>
             <li>
               <a href="#none">STORE</a>
-              <div class="nav-sub">
+              <div class="snb">
                 <ul>
                   <li><a href=#none">매장 찾기</a></li>
                   <li><a href="#none">퀵 검색</a></li>
@@ -144,7 +144,7 @@
             </li>
             <li>
               <a href="#none">RESPONSIBILITY</a>
-              <div class="nav-sub">
+              <div class="snb">
                 <ul>
                   <li><a href=#none">사회공헌 캠페인 소개</a></li>
                 </ul>
@@ -179,7 +179,7 @@
             </li>
             <li>
               <a href="#none">STARBUCKS REWARDS</a>
-              <div class="nav-sub">
+              <div class="snb">
                 <ul>
                   <li><a href=#none">스타벅스 리워드</a></li>
                   <li><a href="#none">스타벅스 리워드 소개</a></li>
@@ -207,7 +207,7 @@
             </li>
             <li>
               <a href="#none">WHAT'S NEW</a>
-              <div class="nav-sub">
+              <div class="snb">
                 <ul>
                   <li><a href=#none">이벤트</a></li>
                   <li><a href="#none">전체</a></li>
@@ -247,14 +247,14 @@
             </li>
           </ul>
         </nav>
-        <ul class="info">
+        <ul class="util">
           <!-- 위로 -->
           <li><a href="#none">Sign In</a></li>
           <li><a href="#none">My Starbucks</a></li>
           <li><a href="#none">Customer Service & Ideas</a></li>
           <li><a href="#none">Find a Store</a></li>
           <li>
-            <a href=""><i class="fas fa-search"></i></a>
+            <button><span class="hide">검색</span></button>
           </li>
         </ul>
       </div>
@@ -285,36 +285,38 @@
                 <label for="all-items">전체 상품보기</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="mug" />
-                <label for="mug">머그</label>
+                <input type="checkbox" name="sort" id="item-mug" />
+                <label for="item-mug">머그</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="glass" />
-                <label for="glass">글라스</label>
+                <input type="checkbox" name="sort" id="item-glass" />
+                <label for="item-glass">글라스</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="all-items" />
-                <label for="all-items">플라스틱 텀블러</label>
+                <input type="checkbox" name="sort" id="item-plastic" />
+                <label for="item-plastic">플라스틱 텀블러</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="all-items" />
-                <label for="all-items">스테인리스 텀블러</label>
+                <input type="checkbox" name="sort" id="item-stain" />
+                <label for="item-stain">스테인리스 텀블러</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="all-items" />
-                <label for="all-items">보온병</label>
+                <input type="checkbox" name="sort" id="item-Thermos" />
+                <label for="item-Thermos">보온병</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="all-items" />
-                <label for="all-items">액세서리</label>
+                <input type="checkbox" name="sort" id="item-
+                accessories" />
+                <label for="item-
+                accessories">액세서리</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="all-items" />
-                <label for="all-items">커피 용품</label>
+                <input type="checkbox" name="sort" id="item-coffee" />
+                <label for="item-coffee">커피 용품</label>
               </li>
               <li>
-                <input type="checkbox" name="sort" id="all-items" />
-                <label for="all-items">패키지 티(티바나)</label>
+                <input type="checkbox" name="sort" id="item-tea" />
+                <label for="item-tea">패키지 티(티바나)</label>
               </li>
             </ul>
           </form>
@@ -332,8 +334,9 @@
       </div>
     </main>
     <footer>
-      <h2></h2>
+      <h2>기업정보</h2>
       <section>
+        <h3></h3>
         <ul>
           <li><a href="#none">CUSTOMER SERVICE & IDEAS</a></li>
           <li><a href="#none">자주 하는 질문</a></li>
