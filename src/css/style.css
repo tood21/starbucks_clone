@@ -69,7 +69,7 @@ header .cont-header {
   padding-top: 2.4rem;
 }
 .cont-header .lists-gnb li a {
-  display: inline-block;
+  display: block;
   padding: 0.5rem 1.25rem;
   line-height: 1.5rem;
   height: 2.5rem;
@@ -81,8 +81,8 @@ header .cont-header {
   color: #669900;
   text-decoration: underline;
 }
-/* 소제목  */
-.snb {
+/* 소메뉴 */
+.cont-header .lists-gnb li .snb {
   display: none;
 }
 
@@ -144,5 +144,25 @@ main .cont-main {
 
 .cont-main .cont-sort {
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid #ddd;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.cont-main .cont-sort .tit-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.cont-main .cont-sort .list-sort {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: ;
+}
+.cont-main .cont-sort .choice-sort {
+  font-size: 0.7rem;
+  padding: 1.5rem 0;
 }
