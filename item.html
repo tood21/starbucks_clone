@@ -264,20 +264,26 @@
     <main>
       <div class="cont-main">
         <h2 class="title-main" id="content">상품</h2>
-        <div class="site-map">
-          <a href="#none"><i class="fas fa-home"></i></a>
-          <a href="#none">MENU</a>
-          <a href="#none">상품</a>
-        </div>
+        <ul class="site-map">
+          <li>
+            <a href="#none"><i class="fas fa-home"></i></a>
+          </li>
+          <li><img src="src/img/icon_arrow.png" alt="" /></li>
+          <li><a href="#none">MENU</a></li>
+          <li><img src="src/img/icon_arrow.png" alt="" /></li>
+          <li><a href="#none">상품</a></li>
+        </ul>
         <section class="cont-sort">
           <div class="tit-sort">
             <h3>분류보기</h3>
-            <img src="src/img/list_up_btn.png" alt="분류 접기" />
+            <button>
+              <img src="src/img/list_up_btn.png" alt="분류 접기" />
+            </button>
           </div>
           <div class="choice-sort">
-            <div>
-              <a href="#none">카테고리</a>
-              <a href="#none">테마</a>
+            <div class="menu-tab">
+              <button>카테고리</button>
+              <button>테마</button>
             </div>
             <form>
               <!-- form넣을까? 말까?  구현방법 -->
@@ -322,9 +328,10 @@
             </form>
           </div>
         </section>
-        <section>
+        <section class="cont-item">
           <h3 class="hide">상품페이지</h3>
-          <strong>머그</strong>
+          <button class="btn-selel">상세분류</button>
+          <p>머그</p>
           <ul>
             <li>
               <a href="#none"><img src="src/img/mug1.jpg" alt="" /></a>

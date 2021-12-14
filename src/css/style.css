@@ -137,9 +137,14 @@ main .cont-main {
   margin-top: 1.5rem;
 }
 .cont-main .site-map {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   font-size: 0.6rem;
   margin-bottom: 1.2rem;
+}
+
+.cont-main .site-map li {
+  margin-right: 5px;
 }
 
 .cont-main .cont-sort {
@@ -147,22 +152,61 @@ main .cont-main {
   box-sizing: border-box;
   border: 1px solid #ddd;
   padding: 1.5rem 1.5rem 0 1.5rem;
+  border-radius: 0.4rem;
 }
 
-.cont-main .cont-sort .tit-sort {
+.cont-sort .tit-sort {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1.1rem;
   border-bottom: 1px solid #ddd;
 }
-
-.cont-main .cont-sort .list-sort {
-  display: flex;
-  justify-content: space-between;
-  vertical-align: ;
+.cont-sort .tit-sort button {
+  border: none;
+  background: inherit;
+  cursor: pointer;
 }
-.cont-main .cont-sort .choice-sort {
+
+.cont-sort .choice-sort {
   font-size: 0.7rem;
   padding: 1.5rem 0;
 }
+.cont-sort .choice-sort .menu-tab {
+  font-size: 0;
+}
+
+/* 자바 스크립트 미구현 */
+.cont-sort .choice-sort .menu-tab button {
+  display: inline-block;
+  width: 10rem;
+  background-color: #006633;
+  border-radius: 0.15rem;
+  color: #fff;
+  border: none;
+  font-size: 0.7rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin: 0 0.5rem 1rem 0;
+}
+/* 자바 스크립트 미구현 */
+.cont-sort .choice-sort .menu-tab button:nth-child(2) {
+  background-color: #fff;
+  color: #000;
+}
+
+.cont-sort .choice-sort .list-sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-sort .choice-sort .list-sort h3 {
+  font-weight: bold;
+}
+
+.cont-sort .choice-sort .list-sort li input {
+  position: relative;
+  top: 0.075rem;
+}
+
+.cont-main .cont-item;
