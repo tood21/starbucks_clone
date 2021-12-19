@@ -259,7 +259,7 @@ header .cont-header {
   font-family: inherit;
   width: 12.4rem;
   font-size: 0.7rem;
-  background-color: #f4f4f2;
+  background-color: #fff;
   line-height: 2rem;
   text-align: left;
   border-radius: 0.15rem;
@@ -283,6 +283,7 @@ header .cont-header {
   border: 1px solid #ddd;
   position: absolute;
   z-index: 20;
+  background-color: #fff;
   box-sizing: border-box;
 }
 .cont-select .list-select.active {
