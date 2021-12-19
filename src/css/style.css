@@ -64,6 +64,8 @@ header {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 10;
+  border-bottom: 1px solid #ddd;
+  color: #444444;
 }
 
 header .cont-header {
@@ -142,12 +144,12 @@ header .cont-header {
 }
 
 /* contents */
-main {
+#main {
   padding: 6rem 0 4rem;
   width: 100%;
 }
 
-main .cont-main {
+#main .cont-main {
   margin: 0 auto;
   width: 54.5rem;
 }
@@ -238,10 +240,59 @@ main .cont-main {
   cursor: pointer;
 }
 
-.cont-main .btn-select {
-  margin-top: 1.5rem;
+.cont-main .cont-select {
   float: right;
+}
+
+.cont-select .btn-select {
+  margin-top: 1.5rem;
   font-family: inherit;
+  width: 12.4rem;
+  font-size: 0.7rem;
+  background-color: #f4f4f2;
+  line-height: 2rem;
+  text-align: left;
+  border-radius: 0.15rem;
+  border: 1px solid #ddd;
+  color: #444444;
+  padding-left: 0.55rem;
+  cursor: pointer;
+}
+.btn-select .fa-chevron-down {
+  float: right;
+  position: relative;
+  top: 0.65rem;
+  right: 0.4rem;
+  color: #444444;
+}
+.cont-select .list-select {
+  display: none;
+  width: 12.4rem;
+  border-radius: 0.15rem;
+  border: 1px solid #ddd;
+  position: absolute;
+  z-index: 20;
+}
+.cont-select .list-select.active {
+  display: block;
+}
+.cont-select .list-select li {
+  display: flex;
+  align-items: center;
+  padding: 3px 0 3px 3px;
+}
+
+.cont-select .list-select li label {
+  font-size: 0.7rem;
+  color: #444444;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+.cont-select .list-select li label img {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: 5px;
 }
 
 .cont-main .cont-item {

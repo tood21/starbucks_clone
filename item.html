@@ -261,7 +261,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <div class="cont-main">
         <h2 class="title-main" id="content">상품</h2>
         <ul class="site-map">
@@ -317,18 +317,50 @@
                   <label for="itemAccessories">액세서리</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="sort" id="item-coffee" />
-                  <label for="item-coffee">커피 용품</label>
+                  <input type="checkbox" name="sort" id="itemCoffee" />
+                  <label for="itemCoffee">커피 용품</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="sort" id="item-tea" />
-                  <label for="item-tea">패키지 티(티바나)</label>
+                  <input type="checkbox" name="sort" id="itemTea" />
+                  <label for="itemTea">패키지 티(티바나)</label>
                 </li>
               </ul>
             </form>
           </div>
         </section>
-        <button class="btn-select">상세분류</button>
+        <div class="cont-select">
+          <button
+            type="button"
+            title="상세분류 옵션 선택하기"
+            class="btn-select"
+          >
+            상세분류
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="list-select">
+            <li>
+              <input type="checkbox" name="sort" id="itemNew" />
+              <label for="itemNew">
+                <img src="src/img/smark01.png" alt="" />
+                신규 출시된 메뉴</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" name="sort" id="itemSeason" />
+              <label for="itemSeason">
+                <img src="src/img/smark02.png" alt="" />
+                한정기간 출시되는 시즌성 메뉴</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" name="sort" id="itemSoldout" />
+              <label for="itemSoldout">
+                <img src="src/img/smark04.png" alt="" />
+                판매 완료된 메뉴</label
+              >
+            </li>
+          </ul>
+        </div>
         <section class="cont-item">
           <h3 class="hide">상품페이지</h3>
           <p class="tit-item">머그</p>
@@ -471,5 +503,6 @@
         <small>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</small>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
