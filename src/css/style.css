@@ -58,7 +58,8 @@ body {
   font-size: 1rem;
 }
 
-header {
+#header {
+  top: 0;
   background-color: #f6f5ef;
   position: fixed;
   width: 100%;
@@ -68,7 +69,7 @@ header {
   color: #444444;
 }
 
-header .cont-header {
+#header .cont-header {
   margin: 0 auto;
   width: 54.5rem;
   position: relative;
